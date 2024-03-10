@@ -8,6 +8,8 @@ body {
 nav {
   background-color: rgb(13, 0, 255);
   overflow: hidden;
+  margin-left: -40px;
+  margin-top: -16px;
 
   & ul {
     list-style: none;
@@ -16,10 +18,9 @@ nav {
 
 nav a {
   float: left;
-  display: block;
   color: white;
   text-align: center;
-  padding: 2px 12px;
+  padding: 20px 12px;
   text-decoration: none;
   font-size: 20px;
 
@@ -34,15 +35,15 @@ nav a.active {
   color: white;
 }
 
-.icon {
+nav a.icon {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-  li:not(:first-child, :last-child) {
+  li:not(:first-child) {
     display: none;
   }
-  .icon {
+  li a.icon {
     float: right;
     display: block;
   }
@@ -54,7 +55,7 @@ nav a.active {
   margin-left: 10px;
 
   & h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
   }
 
