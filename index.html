@@ -12,14 +12,18 @@
     <title>Responsive Navigation</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
+    <header>
+      <nav class="topnav responsive" id="myTopnav">
         <ul>
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="#products">Products</a></li>
           <li><a href="#about">About us</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a class="icon" href=""></a><i class="fa-solid fa-bars"></i></li>
+          <li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+              ><i class="fa-solid fa-bars"></i>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -32,6 +36,16 @@
           responsive burger menu.
         </p>
       </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
     </main>
   </body>
 </html>
