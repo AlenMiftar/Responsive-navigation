@@ -52,26 +52,20 @@ body {
     top: 0px;
     display: block;
   }
-
-  .topnav.responsive li:not(:last-of-type) {
-    display: flex;
-    position: relative;
-  }
 }
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
   }
+  .topnav.responsive li:not(:last-of-type) {
+    display: flex;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0px;
     top: 16px;
   }
-  /* .topnav.responsive a {
-    display: block;
-    text-align: left;
-  } */
 }
 
 .text-box {
