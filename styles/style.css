@@ -41,40 +41,37 @@ body {
   display: none;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .topnav li:not(:first-child, :last-child, :last-of-type) {
     display: none;
   }
 
   .topnav .icon {
-    float: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
     display: block;
   }
-} */
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
+  .topnav.responsive li:not(:last-of-type) {
+    display: flex;
+    position: relative;
   }
 }
+
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
   }
   .topnav.responsive a.icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0px;
+    top: 16px;
   }
-  .topnav.responsive a {
-    float: none;
+  /* .topnav.responsive a {
     display: block;
     text-align: left;
-  }
+  } */
 }
 
 .text-box {
