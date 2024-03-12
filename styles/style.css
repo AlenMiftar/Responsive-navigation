@@ -47,10 +47,12 @@ body {
     display: none;
   }
 
-  .topnav .icon {
-    position: absolute;
+  .topnav a.icon {
+    /* position: absolute;
     right: 0px;
     top: 0px;
+    display: block; */
+    float: right;
     display: block;
   }
 }
@@ -58,6 +60,7 @@ body {
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
+    height: 268px;
   }
   .topnav.responsive li:not(:last-child) {
     display: flex;
@@ -68,6 +71,10 @@ body {
     top: 16px;
   }
   .topnav.responsive a.links {
+    width: 100%;
+    text-align: left;
+  }
+  .topnav.responsive a.active {
     width: 100%;
     text-align: left;
   }
