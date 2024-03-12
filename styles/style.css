@@ -39,10 +39,11 @@ body {
 
 .topnav .icon {
   display: none;
+  width: 48px;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav li:not(:first-child, :last-child, :last-of-type) {
+  .topnav li:not(:first-child, :last-child) {
     display: none;
   }
 
@@ -58,13 +59,17 @@ body {
   .topnav.responsive {
     position: relative;
   }
-  .topnav.responsive li:not(:last-of-type) {
+  .topnav.responsive li:not(:last-child) {
     display: flex;
   }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0px;
     top: 16px;
+  }
+  .topnav.responsive a.links {
+    width: 100%;
+    text-align: left;
   }
 }
 
